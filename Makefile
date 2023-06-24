@@ -190,3 +190,7 @@ help:
 .PHONY: version
 version:
 	@echo $(VERSION)
+
+copy-cache-to-host:
+	cp distributions/cache.json ~/.cache/binenv
+	cp distributions/distributions.yaml ~/.config/binenv
